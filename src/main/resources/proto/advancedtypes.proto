@@ -1,0 +1,16 @@
+syntax = "proto3";
+package example;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+
+
+message AdvancedTypes{
+  google.protobuf.Timestamp eventDay = 1;
+  google.protobuf.Duration eventDuration = 2;
+  map<string,string> colors = 3;
+  oneof gender{
+    string male = 4;
+    bool female = 5;
+  }
+}

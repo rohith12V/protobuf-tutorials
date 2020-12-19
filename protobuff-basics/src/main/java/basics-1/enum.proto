@@ -1,0 +1,11 @@
+syntax = "proto3";
+enum Color{
+  UNKNOWN = 0; // default value
+  PINK = 1;
+  RED = 2;
+}
+
+message Mymessage{
+  string name = 2;
+  Color color = 4;
+}

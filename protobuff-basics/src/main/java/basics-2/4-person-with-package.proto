@@ -1,0 +1,11 @@
+// The syntax for this file is proto3
+syntax = "proto3";
+
+import "basics2/4-date-with-package.proto";
+
+package person;
+
+message Person {
+  // Person's birthday
+  my.date.Date birthday = 9;
+}
